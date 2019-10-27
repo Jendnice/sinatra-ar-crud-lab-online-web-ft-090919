@@ -20,8 +20,6 @@ class ApplicationController < Sinatra::Base
     @new_article = Article.create(params[:article])
     @new_article.save
     
-    # /articles/<%= @article.id %>/
-    
     redirect "/articles/#{@new_article.id}"
   end 
   
