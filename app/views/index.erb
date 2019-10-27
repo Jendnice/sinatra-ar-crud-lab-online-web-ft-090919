@@ -1,0 +1,12 @@
+<!--Here's your index! (Format all articles through erb iteration below.)-->
+
+<!DOCTYPE html>
+
+<html>
+
+    <% @articles.each do |article| %>
+     <%= article.title %>
+     <%= article.content %>
+   <% end %>
+  
+</html>
